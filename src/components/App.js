@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import './../styles/App.css';
 
+const button = document.getElementById("click");
+const paragraph = document.getElementById("para");
 
-
+button.addEventListener("click", function() {
+  paragraph.classList.toggle("hide");
+  paragraph.classList.toggle("show");
+});
 
 const App = (props) => {
 
